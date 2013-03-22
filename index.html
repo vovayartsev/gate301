@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Gate301 : Hosted redirect from TLD.xyz to www.TLD.xyz" />
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Gate301 by vovayartsev</title>
+    <title>Gate301</title>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <h1>Gate301</h1>
-        <h2>Hosted redirect from TLD.xyz to www.TLD.xyz</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vovayartsev/gate301">View on GitHub</a>
 
-        <section id="downloads">
-          <a href="https://github.com/vovayartsev/gate301/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/vovayartsev/gate301/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/vovayartsev/gate301" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+          <h1 id="project_title">Gate301</h1>
+          <h2 id="project_tagline">Hosted redirect from TLD.xyz to www.TLD.xyz</h2>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>Gate301.io</h1>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vovayartsev/gate301/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vovayartsev/gate301/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<hr><h2>About</h2>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Why</h2>
 
-<p>Gate301.io is a hosted HTTP301 redirect which simply adds "<a href="http://www.">www.</a>" to the original address.</p>
+<p>With cloud hosting (e.g. Heroku or Amazon S3), your website has no static IP which you could assign to the domain you own. Gate301.org gives you a hosted HTTP301 redirect which simply adds "<a href="http://www.">www.</a>" to the original address.</p>
 
 <hr><h2>Usage</h2>
 
-<ol>
-<li>In your zone file, assign <em>54.225.203.217</em> as an IP for your TLD record.</li>
-</ol><pre><code>@  IN  A  54.225.203.217
+<p>In your domain zone file</p>
+
+<pre><code>@  IN  A  54.225.203.217
 </code></pre>
 
-<ol>
-<li>Subscribe to a newsletter - this way I'll be able to let you know if any technical changes occur.</li>
-</ol><hr><h2>Usage Examples</h2>
+<p>Now any HTTP request to your TLD.com will be redirected to <a href="http://www.TLD.com">www.TLD.com</a>, which is likely a CNAME for your cloud-hosted website.</p>
 
-<p>You would use Gate301.io if you own <em>example.org</em> domain, and you want the visitors of <a href="http://example.com/">http://example.com/</a> to be redirected to <a href="http://www.example.com/">http://www.example.com/</a></p>
+<p>Remember to subscribe to the emergency newsletter - this way I'll let you know of any technical changes occurred.</p>
+
+Loading...
 
 <hr><h2>FAQ</h2>
 
@@ -57,7 +58,11 @@
 
 <p>I might turn down the server for a couple minutes a month for maintenance, so please don't use Gate31.io for critical production apps.</p>
 
-<h2>How else can I set up a redirect to WWW for my domain?</h2>
+<h3>What if the IP 54.225.203.217 changes?</h3>
+
+<p>It's a static IP which should never change. Nevertheless, if this happens, I'll let you know through a newsletter.</p>
+
+<h3>How else can I set up a redirect?</h3>
 
 <ul>
 <li>If your domain is hosted at GoDaddy, take a look at <a href="http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account">http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account</a>
@@ -66,6 +71,15 @@
       </section>
     </div>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Gate301 maintained by <a href="https://github.com/vovayartsev">vovayartsev</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
