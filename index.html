@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen"/>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"/>-->
+    <link href="images/favicon.png" rel="shortcut icon"/>
 
     <title>Gate301 by vovayartsev</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <div class="container">
-        <h1>Gate301</h1>
-        <h2>Hosted redirect from TLD.xyz to www.TLD.xyz</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/vovayartsev/gate301/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/vovayartsev/gate301/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/vovayartsev/gate301" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
+<header>
     <div class="container">
-      <section id="main_content">
+        <h1>Gate301</h1>
+
+        <h2>Hosted redirect from TLD.xyz to <strong>www</strong>.TLD.xyz</h2>
+
+        <!--
+      <section id="downloads">
+        <a href="https://github.com/vovayartsev/gate301/zipball/master" class="btn">Download as .zip</a>
+        <a href="https://github.com/vovayartsev/gate301/tarball/master" class="btn">Download as .tar.gz</a>
+        <a href="https://github.com/vovayartsev/gate301" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+      </section>
+      -->
+    </div>
+</header>
+
+<div class="container">
+    <section id="main_content">
         <h2>About</h2>
 
-<p>Gate301.org is a hosted HTTP-301 redirect which simply adds "<a href="http://www.">www.</a>" to the original address.</p>
+        <p>Gate301.org is a hosted HTTP-301 redirect which simply adds <em>"www"</em> prefix to the original
+            address.</p>
 
-<hr><h2>Usage</h2>
+        <hr>
+        <h2>Usage</h2>
 
-<p>In your TLD.xyz domain zone file</p>
+        <p>In your TLD.xyz domain zone file</p>
 
-<pre><code>@  IN  A  54.225.203.217
+<pre><code>@ IN A 54.225.203.217
 </code></pre>
 
-<p>Remember to <a href="https://docs.google.com/forms/d/18oTLTl34GASPgNwbXgjdYovg7Ec9z2A7kqD0uitz_Ck/viewform">subscribe to the emergency newsletter</a> so that I could let you know of any technical changes occurred.</p>
+        <p>Remember to <a target="_blank"
+                          href="https://docs.google.com/forms/d/18oTLTl34GASPgNwbXgjdYovg7Ec9z2A7kqD0uitz_Ck/viewform">subscribe
+            to the emergency newsletter</a> so that I could notify of any technical changes.</p>
 
-<hr><h2>FAQ</h2>
+        <hr>
+        <h2>FAQ</h2>
 
-<h3>Does it work with SSL?</h3>
+        <h3>Does it work with SSL?</h3>
 
-<p>NO, it doesn't</p>
+        <p>NO, it doesn't</p>
 
-<h3>How stable is it?</h3>
+        <h3>How stable is it?</h3>
 
-<p>I might turn down the server for a couple minutes a month for maintenance, so please don't use Gate31.io for critical production apps.</p>
+        <p>I might turn down the server for a couple minutes a month for maintenance, so please don't use Gate31.io for
+            critical production apps.</p>
 
-<h3>What if the IP 54.225.203.217 changes?</h3>
+        <h3>What if the IP 54.225.203.217 changes?</h3>
 
-<p>It's a static IP which should never change. Nevertheless, if this happens, I'll let you know through a newsletter.</p>
+        <p>It's a static IP which should never change. Nevertheless, if this happens, I'll let you know through a
+            newsletter.</p>
 
-<h3>How else can I set up a redirect?</h3>
+        <h3>How else can I set up a redirect?</h3>
 
-<ul>
-<li>If your domain is hosted at GoDaddy, take a look at <a href="http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account">http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account</a>
-</li>
-</ul>
-      </section>
-    </div>
+        <ul>
+            <li>If your domain is hosted at GoDaddy, take a look at <a target="_blank"
+                                                                       href="http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account">http://support.godaddy.com/help/article/5120/redirect-urls-with-your-hosting-account</a>
+            </li>
+        </ul>
 
-    
-  </body>
+        <hr>
+
+        <p class="AlignRight">
+            <small>
+                Maintained by <a href="https://github.com/vovayartsev" target="_blank">Vladimir Yartsev</a>
+            </small>
+        </p>
+    </section>
+</div>
+
+
+</body>
 </html>
