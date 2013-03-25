@@ -1,4 +1,4 @@
 gate301
 =======
 
-Hosted redirect from TLD.xyz to www.TLD.xyz
+www.gate301.org - hosted http-301 redirect from bare domain to www
